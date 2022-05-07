@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "Roboto-Light";
+  src: url(../assets/fonts/Roboto-Light.ttf)
+}
+
+body {
+  margin: 6px;
+  width: 380px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+ul li {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+ul li input {
+  width: 200px;
+  border: 2px solid #15c39a;
+  padding: 0 5px;
+  height: 25px;
+  font-family: "Roboto-Light";
+}
+
+ul li button.shortcut {
+  width: 100px;
+}
+
+ul li button.delete {
+  width: 30px;
+  background: #ff0000;
+}
+
+button#add-shortcut {
+  margin-top: 10px;
+  width: 30px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 19px;
+}
+
+/* Common */
+ul li input,
+ul li button.shortcut,
+ul li button.delete,
+button#add-shortcut {
+  border-radius: 4px;
+}
+
+
+ul li button.shortcut,
+button#add-shortcut {
+  background: #15c39a;
+}
+
+ul li button.shortcut,
+ul li button.delete,
+button#add-shortcut {
+  border: none;
+  color: white;
+  transition: background 0.5s;
+}
+
+ul li button.shortcut:hover,
+ul li button.delete:hover,
+button#add-shortcut:hover {
+  cursor: pointer;
+}
+
+ul li button.shortcut:hover,
+button#add-shortcut:hover {
+  background: #11a280;
+}
+
+ul li button.delete:hover {
+  background: #cc0000;
+}
+
+ul li input:focus,
+ul li button.shortcut:focus,
+button#add-shortcut:focus {
+  outline: 1px solid #11a280;
+}
+/* Common (END) */
